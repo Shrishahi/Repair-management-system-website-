@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,32 +10,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg bg-light bg-opacity-75 backdrop-blur fixed-top">
+        <div class="container-fluid">
             <a class="navbar-brand p-0" href="#">
                 <img src="logo-dark.png" alt="Guru Repair Logo" class="logo">
             </a>
-            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto gap-lg-3">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Features
-                        </a>
-                        <ul class="dropdown-menu border-0 shadow-lg">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Features</a>
+                        <ul class="dropdown-menu shadow-lg border-0">
                             <li><a class="dropdown-item" href="tickets.html">Ticket Management</a></li>
                             <li><a class="dropdown-item" href="inventory.html">Inventory Tracking</a></li>
                             <li><a class="dropdown-item" href="invoicing.html">Invoicing & Payments</a></li>
@@ -47,11 +35,8 @@
                     <li class="nav-item"><a class="nav-link" href="#industries">Industries</a></li>
                     <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Resources
-                        </a>
-                        <ul class="dropdown-menu border-0 shadow-lg">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                        <ul class="dropdown-menu shadow-lg border-0">
                             <li><a class="dropdown-item" href="#resources">Help Center</a></li>
                             <li><a class="dropdown-item" href="#resources">Blog</a></li>
                             <li><a class="dropdown-item" href="#resources">Community Forum</a></li>
@@ -66,84 +51,64 @@
     </nav>
 
     <!-- Hero Section -->
-    <div class="hero-wrapper">
-        <header class="hero container">
+    <section class="bg-primary text-white py-5" style="border-bottom-left-radius:40px;border-bottom-right-radius:40px; margin-top:80px;">
+        <div class="container">
             <div class="row align-items-center justify-content-between">
-                <div class="col-lg-5 col-md-12 mb-5 mb-lg-0">
-                    <h1 class="display-4 fw-bold mb-4">
-                        From Intake to Delivery—<br>
-                        <span class="text-white">Manage Every Repair Seamlessly</span>
-                    </h1>
-                    <p class="lead mb-5 opacity-75">The all-in-one platform to manage tickets, track inventory, and
-                        impress your customers. Designed for modern repair shops.</p>
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h1 class="display-4 fw-bold mb-4">From Intake to Delivery—<br><span class="text-white">Manage Every Repair Seamlessly</span></h1>
+                    <p class="lead mb-5 opacity-75">The all-in-one platform to manage tickets, track inventory, and impress your customers. Designed for modern repair shops.</p>
                     <div class="d-flex flex-column flex-sm-row gap-3">
-                        <a href="#pricing" class="btn btn-light btn-lg px-4 fw-bold text-primary shadow-sm">Start Free
-                            Trial</a>
+                        <a href="#pricing" class="btn btn-light btn-lg px-4 fw-bold text-primary shadow-sm">Start Free Trial</a>
                         <a href="#features" class="btn btn-outline-light btn-lg px-4 fw-bold">See How It Works</a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 hero-image">
+                <div class="col-lg-6">
                     <img src="dashboard.jpg" alt="Guru Repair Dashboard Mockup" class="img-fluid rounded-4 shadow-lg">
                 </div>
             </div>
-        </header>
-    </div>
-
-
+        </div>
+    </section>
 
     <!-- Integrations Section -->
-    <section id="integrations" class="section bg-alt">
+    <section id="integrations" class="py-5 bg-white">
         <div class="container">
-            <div class="section-header text-center mb-5">
+            <div class="text-center mb-5">
                 <h2 class="fw-bold">Plays well with others</h2>
                 <p class="text-muted">Connect Guru Repair with the tools you already use.</p>
             </div>
-            <div class="d-flex flex-wrap justify-content-center gap-4">
-                <div class="card border-0 shadow-sm rounded-4 p-4 text-center d-flex align-items-center"
-                    style="min-width: 140px;">
-                    <svg width="40" height="40" class="mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        style="color: var(--bs-primary);">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <polyline points="22,6 12,13 2,6"></polyline>
-                    </svg>
-                    <span class="fw-bold">Email</span>
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-sm-4 col-md-3 text-center">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                        <svg width="40" height="40" class="mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--bs-primary);"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <span class="fw-bold">Email</span>
+                    </div>
                 </div>
-                <div class="card border-0 shadow-sm rounded-4 p-4 text-center d-flex align-items-center"
-                    style="min-width: 140px;">
-                    <svg width="40" height="40" class="mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        style="color: var(--bs-primary);">
-                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                    </svg>
-                    <span class="fw-bold">SMS</span>
+                <div class="col-6 col-sm-4 col-md-3 text-center">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                        <svg width="40" height="40" class="mb-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--bs-primary);"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        <span class="fw-bold">SMS</span>
+                    </div>
                 </div>
-                <div class="card border-0 shadow-sm rounded-4 p-4 text-center d-flex align-items-center"
-                    style="min-width: 140px;">
-                    <svg width="40" height="40" class="mb-3" viewBox="0 0 24 24" fill="none" stroke="#60bb46"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="5" width="20" height="14" rx="2"></rect>
-                        <line x1="2" y1="10" x2="22" y2="10"></line>
-                    </svg>
-                    <span class="fw-bold" style="color: #60bb46;">eSewa</span>
+                <div class="col-6 col-sm-4 col-md-3 text-center">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                        <svg width="40" height="40" class="mb-3" viewBox="0 0 24 24" fill="none" stroke="#60bb46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+                        <span class="fw-bold" style="color:#60bb46;">eSewa</span>
+                    </div>
                 </div>
-                <div class="card border-0 shadow-sm rounded-4 p-4 text-center d-flex align-items-center"
-                    style="min-width: 140px;">
-                    <svg width="40" height="40" class="mb-3" viewBox="0 0 24 24" fill="none" stroke="#5c2d91"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
-                        <line x1="1" y1="10" x2="23" y2="10"></line>
-                    </svg>
-                    <span class="fw-bold" style="color: #5c2d91;">Khalti</span>
+                <div class="col-6 col-sm-4 col-md-3 text-center">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                        <svg width="40" height="40" class="mb-3" viewBox="0 0 24 24" fill="none" stroke="#5c2d91" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                        <span class="fw-bold" style="color:#5c2d91;">Khalti</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Industries Section -->
-    <section id="industries" class="section">
+    <section id="industries" class="py-5 bg-white">
         <div class="container">
-            <div class="section-header text-center mb-5">
+            <div class="text-center mb-5">
                 <h2 class="fw-bold">Designed for Every Type of Repair Business</h2>
                 <p class="text-muted">Customize workflows to match your operations perfectly.</p>
             </div>
@@ -151,22 +116,19 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
                         <h3 class="h5 fw-bold mb-3">📱 Electronics Repair</h3>
-                        <p class="text-muted mb-0 small">Fast and reliable repairs for all your essential electronic
-                            devices.</p>
+                        <p class="text-muted mb-0 small">Fast and reliable repairs for all your essential electronic devices.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
                         <h3 class="h5 fw-bold mb-3">🚗 Auto Repair</h3>
-                        <p class="text-muted mb-0 small">Repair, restore, and detail your vehicle with trusted
-                            professionals.</p>
+                        <p class="text-muted mb-0 small">Repair, restore, and detail your vehicle with trusted professionals.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
                         <h3 class="h5 fw-bold mb-3">❄️ HVAC & Plumbing</h3>
-                        <p class="text-muted mb-0 small">Smarter dispatching and quoting for HVAC and plumbing teams.
-                        </p>
+                        <p class="text-muted mb-0 small">Smarter dispatching and quoting for HVAC and plumbing teams.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
@@ -180,9 +142,9 @@
     </section>
 
     <!-- Pricing Section -->
-    <section id="pricing" class="section bg-alt">
+    <section id="pricing" class="py-5 bg-white">
         <div class="container">
-            <div class="section-header text-center mb-5">
+            <div class="text-center mb-5">
                 <h2 class="fw-bold">Simple, transparent pricing</h2>
             </div>
             <div class="row g-4 justify-content-center">
@@ -195,16 +157,12 @@
                             <li class="mb-2"><span class="text-primary me-2">✓</span> Basic ticket management</li>
                             <li class="mb-2"><span class="text-primary me-2">✓</span> Email support</li>
                         </ul>
-                        <div class="mt-auto">
-                            <button class="btn btn-outline-primary w-100 py-2 fw-bold">Get Started</button>
-                        </div>
+                        <button class="btn btn-outline-primary w-100 py-2 fw-bold">Get Started</button>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card border-primary border-2 shadow rounded-4 p-5 h-100 position-relative">
-                        <div
-                            class="badge bg-primary position-absolute top-0 start-50 translate-middle rounded-pill px-3 py-2 fw-bold shadow-sm">
-                            Most Popular</div>
+                        <div class="badge bg-primary position-absolute top-0 start-50 translate-middle rounded-pill px-3 py-2 fw-bold shadow-sm">Most Popular</div>
                         <h3 class="h4 fw-bold">Professional</h3>
                         <div class="price display-5 fw-bold my-4">$99<span class="fs-6 text-muted">/mo</span></div>
                         <ul class="list-unstyled mb-5 text-muted">
@@ -213,9 +171,7 @@
                             <li class="mb-2"><span class="text-primary me-2">✓</span> Customer Portal</li>
                             <li class="mb-2"><span class="text-primary me-2">✓</span> Priority support</li>
                         </ul>
-                        <div class="mt-auto">
-                            <button class="btn btn-primary w-100 py-2 fw-bold">Get Started</button>
-                        </div>
+                        <button class="btn btn-primary w-100 py-2 fw-bold">Get Started</button>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -228,9 +184,7 @@
                             <li class="mb-2"><span class="text-primary me-2">✓</span> API access</li>
                             <li class="mb-2"><span class="text-primary me-2">✓</span> Dedicated support</li>
                         </ul>
-                        <div class="mt-auto">
-                            <button class="btn btn-outline-primary w-100 py-2 fw-bold">Contact Sales</button>
-                        </div>
+                        <button class="btn btn-outline-primary w-100 py-2 fw-bold">Contact Sales</button>
                     </div>
                 </div>
             </div>
@@ -238,60 +192,69 @@
     </section>
 
     <!-- Resources Section -->
-    <section id="resources" class="section">
+    <section id="resources" class="py-5 bg-white">
         <div class="container">
-            <div class="section-header text-center mb-5">
+            <div class="text-center mb-5">
                 <h2 class="fw-bold">Learn and Grow</h2>
                 <p class="text-muted">Resources to help you build a better repair business.</p>
             </div>
             <div class="row g-4">
-                <div class="col-md-4">
-                    <a href="#" class="card border-0 shadow-sm rounded-4 p-4 h-100 text-decoration-none">
-                        <h3 class="h5 fw-bold text-dark">Help Center</h3>
-                        <p class="text-muted mb-0 small">Step-by-step guides and tutorials on using RepairOS.</p>
-                    </a>
-                </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <a href="#" class="card border-0 shadow-sm rounded-4 p-4 h-100 text-decoration-none">
                         <h3 class="h5 fw-bold text-dark">Blog</h3>
                         <p class="text-muted mb-0 small">Industry insights, tips, and best practices.</p>
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
+                    <a href="#" class="card border-0 shadow-sm rounded-4 p-4 h-100 text-decoration-none">
+                        <h3 class="h5 fw-bold text-dark">Knowledge Base</h3>
+                        <p class="text-muted mb-0 small">Comprehensive articles and FAQs for all features.</p>
+                    </a>
+                </div>
+                <div class="col-md-3">
                     <a href="#" class="card border-0 shadow-sm rounded-4 p-4 h-100 text-decoration-none">
                         <h3 class="h5 fw-bold text-dark">Community Forum</h3>
                         <p class="text-muted mb-0 small">Connect with other repair shop owners.</p>
                     </a>
                 </div>
+                <div class="col-md-3">
+                    <a href="#" class="card border-0 shadow-sm rounded-4 p-4 h-100 text-decoration-none">
+                        <h3 class="h5 fw-bold text-dark">Help Center</h3>
+                        <p class="text-muted mb-0 small">Step‑by‑step guides and tutorials on using RepairOS.</p>
+                    </a>
+                </div>
+            </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section bg-alt">
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-white">
         <div class="container">
-            <div class="section-header text-center mb-5">
+            <div class="text-center mb-5">
                 <button id="contact-toggle" class="btn btn-primary px-5 mb-4">Get in Touch</button>
                 <p class="text-muted">We'd love to hear from you. Reach out for a demo or any queries.</p>
             </div>
-            <form class="contact-form hidden mx-auto" style="max-width: 600px;">
+            <form class="contact-form d-none mx-auto" style="max-width:600px;">
                 <div class="mb-3">
-                    <input type="text" class="form-control py-3" placeholder="Your Name" required>
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" id="name" class="form-control py-3" placeholder="Your Name" required>
                 </div>
                 <div class="mb-3">
-                    <input type="email" class="form-control py-3" placeholder="Your Email" required>
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" id="email" class="form-control py-3" placeholder="Your Email" required>
                 </div>
                 <div class="mb-3">
-                    <textarea class="form-control py-3" placeholder="Your Message" rows="4" required></textarea>
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea id="message" class="form-control py-3" placeholder="Your Message" rows="4" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary w-100 py-3">Send Message</button>
             </form>
         </div>
     </section>
 
-
-
-
-    <footer class="footer py-5 border-top">
+    <!-- Footer -->
+    <footer class="footer py-5 border-top bg-white">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-4 col-md-12">
@@ -307,8 +270,7 @@
                                 <h4 class="mb-3">Product</h4>
                                 <a href="tickets.html" class="d-block mb-2 text-decoration-none text-muted">Features</a>
                                 <a href="pricing.html" class="d-block mb-2 text-decoration-none text-muted">Pricing</a>
-                                <a href="#integrations"
-                                    class="d-block mb-2 text-decoration-none text-muted">Integrations</a>
+                                <a href="#integrations" class="d-block mb-2 text-decoration-none text-muted">Integrations</a>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -334,8 +296,8 @@
             </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
