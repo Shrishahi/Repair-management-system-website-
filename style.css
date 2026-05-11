@@ -1,10 +1,11 @@
 :root {
-    --bs-primary: #abc04347;
-    --bs-primary-rgb: 132, 67, 192;
-    --primary-gradient: linear-gradient(135deg, #8443c047 0%, #8443c047 100%);
-    --bs-body-bg: #faf9f6;
-    --bs-body-color: #0f172a;
+    --bs-primary: #4f46e5;
+    --bs-primary-rgb: 79, 70, 229;
+    --primary-gradient: linear-gradient(135deg, #6366f1 0%, #4338ca 100%);
+    --bs-body-bg: #f8fafc;
+    --bs-body-color: #1e293b;
     --border-color: #e2e8f0;
+    --card-bg: #ffffff;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 }
 
 .logo {
-    max-height: 85px;
+    max-height: 70px;
     width: auto;
     object-fit: contain;
     display: block;
@@ -22,7 +23,7 @@ body {
 
 /* Glassmorphism & Navbar */
 .navbar {
-    background-color: rgba(250, 249, 246, 0.8);
+    background-color: rgba(248, 250, 252, 0.8);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border-color);
@@ -128,7 +129,7 @@ body {
 
 /* Utilities */
 .section { padding: 6rem 0; }
-.bg-alt { background-color: #ffffff; }
+.bg-alt { background-color: #f1f5f9; }
 .hidden { display: none; }
 
 @media (max-width: 991px) {
