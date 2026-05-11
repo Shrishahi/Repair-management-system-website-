@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,120 +10,188 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand p-0" href="index.html">
+    <nav class="navbar navbar-expand-lg bg-light bg-opacity-75 backdrop-blur fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand p-0" href="/">
                 <img src="logo-dark.png" alt="Guru Repair Logo" class="logo">
             </a>
-            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto gap-lg-3">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Features
-                        </a>
-                        <ul class="dropdown-menu border-0 shadow-lg">
-                            <li><a class="dropdown-item" href="tickets.html">Ticket Management</a></li>
-                            <li><a class="dropdown-item" href="inventory.html">Inventory Tracking</a></li>
-                            <li><a class="dropdown-item" href="invoicing.html">Invoicing & Payments</a></li>
-                            <li><a class="dropdown-item" href="portal.html">Customer Portal</a></li>
-                            <li><a class="dropdown-item" href="marketing.html">Marketing</a></li>
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Features</a>
+                        <ul class="dropdown-menu shadow-lg border-0">
+                            <li><a class="dropdown-item" href="tickets">Ticket Management</a></li>
+                            <li><a class="dropdown-item active" href="inventory">Inventory Tracking</a></li>
+                            <li><a class="dropdown-item" href="invoicing">Invoicing & Payments</a></li>
+                            <li><a class="dropdown-item" href="portal">Customer Portal</a></li>
+                            <li><a class="dropdown-item" href="marketing">Marketing</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#integrations">Integrations</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#industries">Industries</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#integrations">Integrations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#industries">Industries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#pricing">Pricing</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                        <ul class="dropdown-menu shadow-lg border-0">
+                            <li><a class="dropdown-item" href="/#resources">Help Center</a></li>
+                            <li><a class="dropdown-item" href="/#resources">Blog</a></li>
+                            <li><a class="dropdown-item" href="/#resources">Community Forum</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <div class="nav-cta">
-                    <a href="index.html#pricing" class="btn btn-primary">Get Started</a>
+                    <a href="/#pricing" class="btn btn-primary">Get Started</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <header class="hero-wrapper py-5">
-        <div class="container text-center py-5">
-            <div class="feature-icon fs-1 mb-4">📦</div>
-            <h1 class="display-4 fw-bold text-white mb-3">Inventory Tracking</h1>
-            <p class="lead text-white opacity-75 mx-auto" style="max-width: 700px;">
-                Master your stock. Track parts, manage suppliers, and never run out of critical components again.
-            </p>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <section class="section">
+    <!-- Hero Section -->
+    <section class="bg-primary text-white py-5" style="border-bottom-left-radius:40px;border-bottom-right-radius:40px; margin-top:80px;">
         <div class="container">
-            <div class="row g-5 align-items-center mb-5">
-                <div class="col-lg-6">
-                    <h2 class="fw-bold mb-4">Real-Time Stock Control</h2>
-                    <p class="text-muted mb-4">
-                        Monitor your inventory across multiple locations. Whether it's screens, batteries, or specialized chips, Guru Repair gives you a clear view of what's in stock.
-                    </p>
-                    <ul class="list-unstyled">
-                        <li class="mb-3"><span class="text-primary me-2">✓</span> Low stock alerts and notifications</li>
-                        <li class="mb-3"><span class="text-primary me-2">✓</span> Batch and serial number tracking</li>
-                        <li class="mb-3"><span class="text-primary me-2">✓</span> Multi-location warehouse support</li>
-                    </ul>
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h1 class="display-4 fw-bold mb-4">Smart Inventory Tracking for<br><span class="text-white">Modern Repair Shops</span></h1>
+                    <p class="lead mb-5 opacity-75">Never lose track of a part again. Manage your stock, track serial numbers, and automate reordering with ease.</p>
+                    <div class="d-flex flex-column flex-sm-row gap-3">
+                        <a href="/#pricing" class="btn btn-light btn-lg px-4 fw-bold text-primary shadow-sm">Start Free Trial</a>
+                        <a href="#details" class="btn btn-outline-light btn-lg px-4 fw-bold">See How It Works</a>
+                    </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="card border-0 shadow rounded-4 p-4 bg-light">
-                        <table class="table table-hover bg-white rounded overflow-hidden shadow-sm">
-                            <thead class="table-dark">
-                                <tr>
-                                    <th>Part Name</th>
-                                    <th>Stock</th>
-                                    <th>Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>iPhone 13 Screen</td>
-                                    <td>12</td>
-                                    <td><span class="badge bg-success">In Stock</span></td>
-                                </tr>
-                                <tr>
-                                    <td>MacBook Air Battery</td>
-                                    <td>2</td>
-                                    <td><span class="badge bg-danger">Low Stock</span></td>
-                                </tr>
-                                <tr>
-                                    <td>Type-C Connectors</td>
-                                    <td>50</td>
-                                    <td><span class="badge bg-success">In Stock</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <div class="col-lg-5">
+                    <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+                        <div class="bg-dark p-3 d-flex align-items-center justify-content-between">
+                            <div class="d-flex gap-2">
+                                <div class="rounded-circle bg-danger" style="width:10px;height:10px;"></div>
+                                <div class="rounded-circle bg-warning" style="width:10px;height:10px;"></div>
+                                <div class="rounded-circle bg-success" style="width:10px;height:10px;"></div>
+                            </div>
+                            <span class="text-white-50 small">Low Stock Alert!</span>
+                        </div>
+                        <div class="card-body p-4 bg-white">
+                            <div class="d-flex align-items-center justify-content-between mb-3 p-3 bg-light rounded-3">
+                                <div>
+                                    <div class="fw-bold">iPhone 13 Screen</div>
+                                    <div class="small text-muted">SKU: SCR-I13-P</div>
+                                </div>
+                                <div class="text-danger fw-bold">2 Left</div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mb-3 p-3 bg-light rounded-3">
+                                <div>
+                                    <div class="fw-bold">Battery Pack X1</div>
+                                    <div class="small text-muted">SKU: BAT-X1-GEN</div>
+                                </div>
+                                <div class="text-success fw-bold">15 Left</div>
+                            </div>
+                            <button class="btn btn-primary w-100 py-2">Order More Parts</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Details Section -->
+    <section id="details" class="py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center flex-row-reverse">
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                                <div class="mb-3 fs-3">📦</div>
+                                <h3 class="h5 fw-bold">Parts Management</h3>
+                                <p class="text-muted small mb-0">Organize parts by category, brand, and device compatibility.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                                <div class="mb-3 fs-3">⚠️</div>
+                                <h3 class="h5 fw-bold">Low Stock Alerts</h3>
+                                <p class="text-muted small mb-0">Set minimum thresholds and get notified automatically when stock is low.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                                <div class="mb-3 fs-3">🔢</div>
+                                <h3 class="h5 fw-bold">Serialization</h3>
+                                <p class="text-muted small mb-0">Track high-value items with unique serial numbers for warranty and security.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                                <div class="mb-3 fs-3">🚚</div>
+                                <h3 class="h5 fw-bold">Supplier Sync</h3>
+                                <p class="text-muted small mb-0">Maintain a directory of suppliers and track purchase orders in one place.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">Precision stock management</h2>
+                    <p class="lead text-muted mb-4">Stop guessing what's in your backroom. Guru Repair provides a real-time view of your inventory, helping you reduce waste and never miss a repair due to missing parts.</p>
+                    <ul class="list-unstyled mb-5">
+                        <li class="mb-3 d-flex align-items-center"><span class="btn btn-primary btn-sm rounded-circle me-3">✓</span> Real-time stock level synchronization</li>
+                        <li class="mb-3 d-flex align-items-center"><span class="btn btn-primary btn-sm rounded-circle me-3">✓</span> Multi-location inventory support</li>
+                        <li class="mb-3 d-flex align-items-center"><span class="btn btn-primary btn-sm rounded-circle me-3">✓</span> Barcode scanning for quick lookup</li>
+                        <li class="mb-3 d-flex align-items-center"><span class="btn btn-primary btn-sm rounded-circle me-3">✓</span> Profit margin tracking on every part</li>
+                    </ul>
+                    <a href="/#pricing" class="btn btn-primary btn-lg px-5 fw-bold">Start Tracking Inventory</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="footer py-5 border-top">
-        <div class="container text-center">
-            <img src="logo-dark.png" alt="Guru Repair Logo" class="logo mb-3">
-            <p class="text-muted">&copy; 2026 Guru Repair. All rights reserved.</p>
+    <footer class="footer py-5 border-top bg-white mt-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer-brand">
+                        <img src="logo-dark.png" alt="Guru Repair Logo" class="logo mb-3">
+                        <p>Less chaos. More repairs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="link-group">
+                                <h4 class="mb-3">Product</h4>
+                                <a href="tickets" class="d-block mb-2 text-decoration-none text-muted">Features</a>
+                                <a href="/#pricing" class="d-block mb-2 text-decoration-none text-muted">Pricing</a>
+                                <a href="/#integrations" class="d-block mb-2 text-decoration-none text-muted">Integrations</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="link-group">
+                                <h4 class="mb-3">Company</h4>
+                                <a href="#" class="d-block mb-2 text-decoration-none text-muted">About Us</a>
+                                <a href="#" class="d-block mb-2 text-decoration-none text-muted">Careers</a>
+                                <a href="#" class="d-block mb-2 text-decoration-none text-muted">Contact</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="link-group">
+                                <h4 class="mb-3">Legal</h4>
+                                <a href="#" class="d-block mb-2 text-decoration-none text-muted">Privacy Policy</a>
+                                <a href="#" class="d-block mb-2 text-decoration-none text-muted">Terms of Service</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom mt-5 pt-4 border-top text-center text-muted">
+                <p>&copy; 2026 Repair Inc. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>

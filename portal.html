@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,106 +10,184 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand p-0" href="index.html">
+    <nav class="navbar navbar-expand-lg bg-light bg-opacity-75 backdrop-blur fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand p-0" href="/">
                 <img src="logo-dark.png" alt="Guru Repair Logo" class="logo">
             </a>
-            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto gap-lg-3">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Features
-                        </a>
-                        <ul class="dropdown-menu border-0 shadow-lg">
-                            <li><a class="dropdown-item" href="tickets.html">Ticket Management</a></li>
-                            <li><a class="dropdown-item" href="inventory.html">Inventory Tracking</a></li>
-                            <li><a class="dropdown-item" href="invoicing.html">Invoicing & Payments</a></li>
-                            <li><a class="dropdown-item" href="portal.html">Customer Portal</a></li>
-                            <li><a class="dropdown-item" href="marketing.html">Marketing</a></li>
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Features</a>
+                        <ul class="dropdown-menu shadow-lg border-0">
+                            <li><a class="dropdown-item" href="tickets">Ticket Management</a></li>
+                            <li><a class="dropdown-item" href="inventory">Inventory Tracking</a></li>
+                            <li><a class="dropdown-item" href="invoicing">Invoicing & Payments</a></li>
+                            <li><a class="dropdown-item active" href="portal">Customer Portal</a></li>
+                            <li><a class="dropdown-item" href="marketing">Marketing</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#integrations">Integrations</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#industries">Industries</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#integrations">Integrations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#industries">Industries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#pricing">Pricing</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                        <ul class="dropdown-menu shadow-lg border-0">
+                            <li><a class="dropdown-item" href="/#resources">Help Center</a></li>
+                            <li><a class="dropdown-item" href="/#resources">Blog</a></li>
+                            <li><a class="dropdown-item" href="/#resources">Community Forum</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <div class="nav-cta">
-                    <a href="index.html#pricing" class="btn btn-primary">Get Started</a>
+                    <a href="/#pricing" class="btn btn-primary">Get Started</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <header class="hero-wrapper py-5">
-        <div class="container text-center py-5">
-            <div class="feature-icon fs-1 mb-4">👤</div>
-            <h1 class="display-4 fw-bold text-white mb-3">Customer Portal</h1>
-            <p class="lead text-white opacity-75 mx-auto" style="max-width: 700px;">
-                Empower your customers. A branded self-service portal where they can track repairs and approve quotes.
-            </p>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <section class="section">
+    <!-- Hero Section -->
+    <section class="bg-primary text-white py-5" style="border-bottom-left-radius:40px;border-bottom-right-radius:40px; margin-top:80px;">
         <div class="container">
-            <div class="row g-5 align-items-center mb-5">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h1 class="display-4 fw-bold mb-4">A Dedicated Space for<br><span class="text-white">Your Customers</span></h1>
+                    <p class="lead mb-5 opacity-75">Enhance customer trust and reduce support calls with a self-service portal where they can track repairs, pay bills, and message you directly.</p>
+                    <div class="d-flex flex-column flex-sm-row gap-3">
+                        <a href="/#pricing" class="btn btn-light btn-lg px-4 fw-bold text-primary shadow-sm">Start Free Trial</a>
+                        <a href="#details" class="btn btn-outline-light btn-lg px-4 fw-bold">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+                        <div class="bg-light p-3 border-bottom d-flex align-items-center justify-content-between">
+                            <span class="fw-bold small">Customer Portal</span>
+                            <div class="rounded-circle bg-secondary bg-opacity-25" style="width:24px;height:24px;"></div>
+                        </div>
+                        <div class="card-body p-4 bg-white">
+                            <h5 class="fw-bold mb-3">Active Repair</h5>
+                            <div class="progress mb-2" style="height: 10px;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width: 75%;"></div>
+                            </div>
+                            <div class="d-flex justify-content-between small text-muted mb-4">
+                                <span>Diagnosed</span>
+                                <span>Repairing</span>
+                                <span class="text-primary fw-bold">Testing</span>
+                                <span>Ready</span>
+                            </div>
+                            <div class="p-3 bg-primary-subtle border border-primary-subtle rounded-3 mb-3">
+                                <div class="small fw-bold text-primary">New Message</div>
+                                <div class="small">"Your screen part has arrived and we are installing it now."</div>
+                            </div>
+                            <button class="btn btn-primary w-100 py-2">View Full Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section id="details" class="py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center flex-row-reverse">
                 <div class="col-lg-6">
-                    <h2 class="fw-bold mb-4">Self-Service Status</h2>
-                    <p class="text-muted mb-4">
-                        Reduce phone inquiries by providing customers with a real-time status page. They can see exactly where their device is in the repair process.
-                    </p>
-                    <ul class="list-unstyled">
-                        <li class="mb-3"><span class="text-primary me-2">✓</span> Track by Ticket ID or Phone Number</li>
-                        <li class="mb-3"><span class="text-primary me-2">✓</span> Approve or reject digital quotes</li>
-                        <li class="mb-3"><span class="text-primary me-2">✓</span> Secure online payment portal</li>
-                    </ul>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                                <div class="mb-3 fs-3">👀</div>
+                                <h3 class="h5 fw-bold">Live Tracking</h3>
+                                <p class="text-muted small mb-0">Provide real-time transparency into the repair status without manual updates.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                                <div class="mb-3 fs-3">💰</div>
+                                <h3 class="h5 fw-bold">Easy Payments</h3>
+                                <p class="text-muted small mb-0">Customers can view and pay their invoices online instantly.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                                <div class="mb-3 fs-3">💬</div>
+                                <h3 class="h5 fw-bold">Direct Messaging</h3>
+                                <p class="text-muted small mb-0">Keep all communication in one place. No more lost emails or missed calls.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                                <div class="mb-3 fs-3">📂</div>
+                                <h3 class="h5 fw-bold">Repair History</h3>
+                                <p class="text-muted small mb-0">Let customers access their past repairs and invoices for tax or resale purposes.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-6">
-                   <div class="card border-0 shadow rounded-4 p-4 text-center">
-                       <div class="mb-4">
-                           <h5 class="fw-bold">Track Your Repair</h5>
-                           <p class="small text-muted">Enter your ticket number to get started</p>
-                       </div>
-                       <div class="input-group mb-3">
-                           <input type="text" class="form-control py-3" placeholder="Ticket ID (e.g. #8821)">
-                           <button class="btn btn-primary px-4">Track</button>
-                       </div>
-                       <div class="mt-4 p-3 rounded bg-light border">
-                           <p class="mb-1 fw-bold text-primary">Status: Repair in Progress</p>
-                           <p class="mb-0 small text-muted">Last updated: 2 hours ago</p>
-                       </div>
-                   </div>
+                    <h2 class="display-5 fw-bold mb-4">Empower your customers</h2>
+                    <p class="lead text-muted mb-4">A great repair experience doesn't end when the device is dropped off. Guru Repair provides a premium digital touchpoint that makes your shop stand out from the competition.</p>
+                    <ul class="list-unstyled mb-5">
+                        <li class="mb-3 d-flex align-items-center"><span class="btn btn-primary btn-sm rounded-circle me-3">✓</span> Branded with your shop's logo and colors</li>
+                        <li class="mb-3 d-flex align-items-center"><span class="btn btn-primary btn-sm rounded-circle me-3">✓</span> Responsive design for mobile and desktop</li>
+                        <li class="mb-3 d-flex align-items-center"><span class="btn btn-primary btn-sm rounded-circle me-3">✓</span> Automated login links via SMS/Email</li>
+                        <li class="mb-3 d-flex align-items-center"><span class="btn btn-primary btn-sm rounded-circle me-3">✓</span> Secure data handling and privacy protection</li>
+                    </ul>
+                    <a href="/#pricing" class="btn btn-primary btn-lg px-5 fw-bold">Improve Customer Experience</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer py-5 border-top">
-        <div class="container text-center">
-            <img src="logo-dark.png" alt="Guru Repair Logo" class="logo mb-3">
-            <p class="text-muted">&copy; 2026 Guru Repair. All rights reserved.</p>
+    <footer class="footer py-5 border-top bg-white mt-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer-brand">
+                        <img src="logo-dark.png" alt="Guru Repair Logo" class="logo mb-3">
+                        <p>Less chaos. More repairs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="link-group">
+                                <h4 class="mb-3">Product</h4>
+                                <a href="tickets" class="d-block mb-2 text-decoration-none text-muted">Features</a>
+                                <a href="/#pricing" class="d-block mb-2 text-decoration-none text-muted">Pricing</a>
+                                <a href="/#integrations" class="d-block mb-2 text-decoration-none text-muted">Integrations</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="link-group">
+                                <h4 class="mb-3">Company</h4>
+                                <a href="#" class="d-block mb-2 text-decoration-none text-muted">About Us</a>
+                                <a href="#" class="d-block mb-2 text-decoration-none text-muted">Careers</a>
+                                <a href="#" class="d-block mb-2 text-decoration-none text-muted">Contact</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="link-group">
+                                <h4 class="mb-3">Legal</h4>
+                                <a href="#" class="d-block mb-2 text-decoration-none text-muted">Privacy Policy</a>
+                                <a href="#" class="d-block mb-2 text-decoration-none text-muted">Terms of Service</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom mt-5 pt-4 border-top text-center text-muted">
+                <p>&copy; 2026 Repair Inc. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
