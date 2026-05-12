@@ -131,6 +131,37 @@ body {
         0 14px 28px rgba(var(--bs-primary-rgb), 0.28);
 }
 
+.btn-primary:active, .btn-primary:focus {
+    background-color: #5d8f39 !important;
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25) !important;
+}
+
+/* Override Bootstrap Blue Defaults */
+.dropdown-item:active,
+.dropdown-item.active {
+    background-color: var(--bs-primary);
+}
+
+.nav-link:focus,
+.btn:focus,
+.btn-primary:focus,
+.form-control:focus,
+.navbar-toggler:focus,
+.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25) !important;
+}
+
+.show > .btn-primary.dropdown-toggle {
+    background-color: #5d8f39 !important;
+    border-color: #5d8f39 !important;
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25) !important;
+}
+
+a:focus-visible {
+    outline: 2px solid var(--bs-primary);
+    outline-offset: 2px;
+}
+
 /* Cards */
 .card {
     background: var(--card-bg);
