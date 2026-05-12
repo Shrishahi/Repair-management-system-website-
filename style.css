@@ -2,7 +2,7 @@
     --bs-primary: #1e1b4b;
     --bs-primary-rgb: 30, 27, 77;
     --primary-gradient: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
-    --bs-body-bg: #f0fff4;
+    --bs-body-bg: #f2fbf4;
     --bs-body-color: #0f172a;
     --border-color: #e5e7eb;
     --card-bg: #bef2c9;
@@ -23,7 +23,7 @@ body {
 
 /* Glassmorphism & Navbar */
 .navbar {
-    background-color: rgba(240, 255, 244, 0.8);
+    background-color: rgba(242, 251, 244, 0.8);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border-color);
@@ -165,8 +165,8 @@ body {
 
 /* Utilities */
 .section { padding: 6rem 0; }
-.bg-light { background-color: #f0fff4 !important; }
-.bg-alt { background-color: #dcfce7 !important; }
+.bg-light { background-color: #f2fbf4 !important; }
+.bg-alt { background-color: #e4f3e8 !important; }
 .hidden { display: none; }
 
 @media (max-width: 991px) {
