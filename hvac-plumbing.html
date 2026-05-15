@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HVAC & Plumbing Service Management - Guru Repair</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light bg-opacity-75 backdrop-blur fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand p-0" href="/">
+                <img src="logo-dark.png" alt="Guru Repair Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto gap-lg-3">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Features</a>
+                        <ul class="dropdown-menu shadow-lg border-0">
+                            <li><a class="dropdown-item" href="tickets">Ticket Management</a></li>
+                            <li><a class="dropdown-item" href="inventory">Inventory Tracking</a></li>
+                            <li><a class="dropdown-item" href="invoicing">Invoicing & Payments</a></li>
+                            <li><a class="dropdown-item" href="portal">Customer Portal</a></li>
+                            <li><a class="dropdown-item" href="marketing">Marketing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Industries</a>
+                        <ul class="dropdown-menu shadow-lg border-0">
+                            <li><a class="dropdown-item" href="electronics-repair">Electronics Repair</a></li>
+                            <li><a class="dropdown-item" href="auto-repair">Auto Repair</a></li>
+                            <li><a class="dropdown-item active" href="hvac-plumbing">HVAC & Plumbing</a></li>
+                            <li><a class="dropdown-item" href="watch-jewelry">Watch & Jewelry</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/#integrations">Integrations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#pricing">Pricing</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Resources</a>
+                        <ul class="dropdown-menu shadow-lg border-0">
+                            <li><a class="dropdown-item" href="/#resources">Help Center</a></li>
+                            <li><a class="dropdown-item" href="/#resources">Blog</a></li>
+                            <li><a class="dropdown-item" href="/#resources">Community Forum</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="/#pricing" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero position-relative" style="margin-top:80px;">
+        <div class="hero-shapes">
+            <div class="shape shape-1"><svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+            <div class="shape shape-2"><svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 10 10c0 5.5-4.5 10-10 10S2 17.5 2 12A10 10 0 0 1 12 2z"/><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"/><path d="M12 7v1"/><path d="M12 16v1"/><path d="M17 12h-1"/><path d="M7 12h-1"/></svg></div>
+        </div>
+
+        <div class="container">
+            <div class="row align-items-center justify-content-between py-lg-5 mt-lg-5">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h1 class="display-5 fw-bold mb-4" style="letter-spacing: -0.01em; line-height: 1.2;">Seamless Dispatching for<br><span class="text-primary">HVAC & Plumbing Teams</span></h1>
+                    <p class="lead mb-5 fw-medium" style="color: #444;">Take your service business mobile. Manage technicians in the field, create on-site quotes, and collect digital signatures instantly with Guru Repair.</p>
+                    <div class="d-flex flex-column flex-sm-row gap-3">
+                        <a href="/#pricing" class="btn btn-primary btn-lg px-5 py-3 fw-bold shadow-sm">Start Free Trial</a>
+                        <a href="#details" class="btn btn-outline-dark btn-lg px-5 py-3 fw-bold">Explore Features</a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden border border-light">
+                        <div class="bg-dark p-3 d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="rounded-circle bg-danger" style="width:10px;height:10px;"></div>
+                                <div class="rounded-circle bg-warning" style="width:10px;height:10px;"></div>
+                                <div class="rounded-circle bg-success" style="width:10px;height:10px;"></div>
+                                <span class="text-white-50 ms-2 small">Live Dispatch Board</span>
+                            </div>
+                            <span class="badge bg-success small">Technician On Route</span>
+                        </div>
+                        <div class="card-body p-4 bg-white">
+                            <div class="mb-3">
+                                <label class="small text-muted mb-1">Job Location</label>
+                                <div class="fw-bold">452 Oak Street, West View</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="small text-muted mb-1">Assigned Tech</label>
+                                <div class="d-flex align-items-center gap-2">
+                                    <div class="rounded-circle bg-primary bg-opacity-10 text-primary d-flex align-items-center justify-content-center fw-bold small" style="width:24px;height:24px;">MK</div>
+                                    <div class="fw-bold small">Mike Kowalski</div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="small text-muted mb-1">Estimated Cost</label>
+                                <div class="text-primary fw-bold fs-5">$349.00</div>
+                            </div>
+                            <div class="pt-2 border-top">
+                                <button class="btn btn-outline-primary w-100 py-2 mb-2">Send Quote to SMS</button>
+                                <button class="btn btn-primary w-100 py-2">Capture Signature</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section id="details" class="py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                                <div class="mb-3 fs-3">🗺️</div>
+                                <h3 class="h5 fw-bold">Smart Dispatching</h3>
+                                <p class="text-muted small mb-0">Assign jobs based on technician location and availability. Reduce drive time and increase jobs per day.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                                <div class="mb-3 fs-3">✍️</div>
+                                <h3 class="h5 fw-bold">Digital Signatures</h3>
+                                <p class="text-muted small mb-0">Get authorization on quotes and final work orders right on your tablet or smartphone.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                                <div class="mb-3 fs-3">🛠️</div>
+                                <h3 class="h5 fw-bold">Equipment Tracking</h3>
+                                <p class="text-muted small mb-0">Maintain a record of client equipment (boilers, AC units, pumps) and their service history.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                                <div class="mb-3 fs-3">📞</div>
+                                <h3 class="h5 fw-bold">Field-to-Office Sync</h3>
+                                <p class="text-muted small mb-0">Real-time updates between technicians in the field and the office team for seamless billing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">The command center for your field service</h2>
+                    <p class="lead text-muted mb-4">HVAC and plumbing repairs often happen at the client's location. Guru Repair is optimized for mobile use, ensuring your team has everything they need on-site.</p>
+                    <ul class="list-unstyled mb-5">
+                        <li class="mb-3 d-flex align-items-center"><span class="btn btn-primary btn-sm rounded-circle me-3">✓</span> Multi-unit property management</li>
+                        <li class="mb-3 d-flex align-items-center"><span class="btn btn-primary btn-sm rounded-circle me-3">✓</span> Recurring maintenance scheduling</li>
+                        <li class="mb-3 d-flex align-items-center"><span class="btn btn-primary btn-sm rounded-circle me-3">✓</span> Instant invoicing and mobile payments</li>
+                        <li class="mb-3 d-flex align-items-center"><span class="btn btn-primary btn-sm rounded-circle me-3">✓</span> Photo-based damage assessment</li>
+                    </ul>
+                    <a href="/#pricing" class="btn btn-primary btn-lg px-5 fw-bold">Scale Your Service</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5 border-top bg-white mt-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer-brand">
+                        <img src="logo-dark.png" alt="Guru Repair Logo" class="logo mb-3">
+                        <p>Less chaos. More repairs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="row g-4">
+                        <div class="col-md-3 col-6">
+                            <div class="link-group">
+                                <h4 class="mb-3">Features</h4>
+                                <a href="/#features" class="d-block mb-2 text-decoration-none text-muted fw-bold">All Features</a>
+                                <a href="tickets" class="d-block mb-2 text-decoration-none text-muted">Ticket Management</a>
+                                <a href="inventory" class="d-block mb-2 text-decoration-none text-muted">Inventory Tracking</a>
+                                <a href="invoicing" class="d-block mb-2 text-decoration-none text-muted">Invoicing & Payments</a>
+                                <a href="portal" class="d-block mb-2 text-decoration-none text-muted">Customer Portal</a>
+                                <a href="marketing" class="d-block mb-2 text-decoration-none text-muted">Marketing</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="link-group">
+                                <h4 class="mb-3">Product</h4>
+                                <a href="/#pricing" class="d-block mb-2 text-decoration-none text-muted">Pricing</a>
+                                <a href="/#integrations" class="d-block mb-2 text-decoration-none text-muted">Integrations</a>
+                                <a href="/#industries" class="d-block mb-2 text-decoration-none text-muted">Industries</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="link-group">
+                                <h4 class="mb-3">Company</h4>
+                                <a href="#" class="d-block mb-2 text-decoration-none text-muted">About Us</a>
+                                <a href="#" class="d-block mb-2 text-decoration-none text-muted">Careers</a>
+                                <a href="/#contact" class="d-block mb-2 text-decoration-none text-muted">Contact</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="link-group">
+                                <h4 class="mb-3">Legal</h4>
+                                <a href="#" class="d-block mb-2 text-decoration-none text-muted">Privacy Policy</a>
+                                <a href="#" class="d-block mb-2 text-decoration-none text-muted">Terms of Service</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom mt-5 pt-4 border-top text-center text-muted">
+                <p>&copy; 2026 Repair Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
