@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Guru Repair</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light bg-opacity-75 backdrop-blur fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand p-0" href="/">
+                <img src="logo-dark.png" alt="Guru Repair Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto gap-lg-3">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Features</a>
+                        <ul class="dropdown-menu shadow-lg border-0">
+                            <li><a class="dropdown-item" href="tickets">Ticket Management</a></li>
+                            <li><a class="dropdown-item" href="inventory">Inventory Tracking</a></li>
+                            <li><a class="dropdown-item" href="invoicing">Invoicing & Payments</a></li>
+                            <li><a class="dropdown-item" href="portal">Customer Portal</a></li>
+                            <li><a class="dropdown-item" href="marketing">Marketing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Industries</a>
+                        <ul class="dropdown-menu shadow-lg border-0">
+                            <li><a class="dropdown-item" href="electronics-repair">Electronics Repair</a></li>
+                            <li><a class="dropdown-item" href="auto-repair">Auto Repair</a></li>
+                            <li><a class="dropdown-item" href="hvac-plumbing">HVAC & Plumbing</a></li>
+                            <li><a class="dropdown-item" href="watch-jewelry">Watch & Jewelry</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/#integrations">Integrations</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="pricing">Pricing</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Resources</a>
+                        <ul class="dropdown-menu shadow-lg border-0">
+                            <li><a class="dropdown-item" href="/#resources">Help Center</a></li>
+                            <li><a class="dropdown-item" href="/#resources">Blog</a></li>
+                            <li><a class="dropdown-item" href="/#resources">Community Forum</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="pricing" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-5" style="margin-top: 80px; background: linear-gradient(180deg, #fafafa 0%, #ffffff 100%);">
+        <div class="container py-lg-5 mt-lg-3">
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold mb-3" style="letter-spacing: -0.01em;">Simple, Transparent Pricing</h1>
+                <p class="lead text-muted">Choose the plan that fits your repair business needs.</p>
+                
+                <!-- Billing Toggle -->
+                <div class="d-flex justify-content-center align-items-center mt-4">
+                    <span class="fw-medium text-muted">Monthly</span>
+                    <div class="form-check form-switch mx-3" style="font-size: 1.25rem;">
+                        <input class="form-check-input shadow-none" type="checkbox" role="switch" id="billingToggle" checked disabled style="cursor: default; background-color: var(--bs-primary); border-color: var(--bs-primary);">
+                    </div>
+                    <span class="fw-bold text-dark">Annually <span class="badge bg-success bg-opacity-10 text-success rounded-pill ms-2 border border-success border-opacity-25" style="font-size: 0.75rem;">Save 20%</span></span>
+                </div>
+            </div>
+
+            <!-- Pricing Cards -->
+            <div class="row g-4 justify-content-center mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm rounded-4 p-5 h-100">
+                        <h3 class="h4 fw-bold">Starter</h3>
+                        <div class="price display-5 fw-bold my-4">$49<span class="fs-6 text-muted">/mo</span></div>
+                        <ul class="list-unstyled mb-5 text-muted">
+                            <li class="mb-3"><span class="text-primary me-2">✓</span> Up to 2 users</li>
+                            <li class="mb-3"><span class="text-primary me-2">✓</span> Basic ticket management</li>
+                            <li class="mb-3"><span class="text-primary me-2">✓</span> Email support</li>
+                        </ul>
+                        <button class="btn btn-outline-primary w-100 py-2 fw-bold mt-auto hover-lift">Get Started</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-primary border-2 shadow rounded-4 p-5 h-100 position-relative">
+                        <div class="badge bg-primary position-absolute top-0 start-50 translate-middle rounded-pill px-4 py-2 fw-bold shadow-sm">Most Popular</div>
+                        <h3 class="h4 fw-bold">Professional</h3>
+                        <div class="price display-5 fw-bold my-4">$99<span class="fs-6 text-muted">/mo</span></div>
+                        <ul class="list-unstyled mb-5 text-muted">
+                            <li class="mb-3"><span class="text-primary me-2">✓</span> Up to 5 users</li>
+                            <li class="mb-3"><span class="text-primary me-2">✓</span> Inventory & Invoicing</li>
+                            <li class="mb-3"><span class="text-primary me-2">✓</span> Customer Portal</li>
+                            <li class="mb-3"><span class="text-primary me-2">✓</span> Priority support</li>
+                        </ul>
+                        <button class="btn btn-primary w-100 py-2 fw-bold mt-auto hover-lift">Get Started</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm rounded-4 p-5 h-100">
+                        <h3 class="h4 fw-bold">Enterprise</h3>
+                        <div class="price display-5 fw-bold my-4">$199<span class="fs-6 text-muted">/mo</span></div>
+                        <ul class="list-unstyled mb-5 text-muted">
+                            <li class="mb-3"><span class="text-primary me-2">✓</span> Unlimited users</li>
+                            <li class="mb-3"><span class="text-primary me-2">✓</span> Custom workflows</li>
+                            <li class="mb-3"><span class="text-primary me-2">✓</span> API access</li>
+                            <li class="mb-3"><span class="text-primary me-2">✓</span> Dedicated support</li>
+                        </ul>
+                        <button class="btn btn-outline-primary w-100 py-2 fw-bold mt-auto hover-lift">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Feature Comparison Table -->
+            <div class="mt-5 pt-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Compare Features</h2>
+                    <p class="text-muted">A detailed look at what's included in each plan.</p>
+                </div>
+                <div class="table-responsive pb-4">
+                    <table class="table table-bordered text-center align-middle bg-white shadow-sm rounded-4 overflow-hidden" style="min-width: 700px;">
+                        <thead class="bg-light">
+                            <tr>
+                                <th class="text-start py-4 ps-4 w-25 border-bottom-0">Features</th>
+                                <th class="py-4 border-bottom-0"><h4 class="h6 fw-bold mb-0">Starter</h4></th>
+                                <th class="py-4 border-bottom-0 bg-primary bg-opacity-10 text-primary"><h4 class="h6 fw-bold mb-0">Professional</h4></th>
+                                <th class="py-4 border-bottom-0"><h4 class="h6 fw-bold mb-0">Enterprise</h4></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-start ps-4 fw-medium text-muted py-3">Users</td>
+                                <td class="py-3">Up to 2</td>
+                                <td class="bg-primary bg-opacity-10 fw-bold py-3">Up to 5</td>
+                                <td class="py-3">Unlimited</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start ps-4 fw-medium text-muted py-3">Ticket Management</td>
+                                <td class="py-3">✓</td>
+                                <td class="bg-primary bg-opacity-10 py-3">✓</td>
+                                <td class="py-3">✓</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start ps-4 fw-medium text-muted py-3">Inventory Tracking</td>
+                                <td class="py-3 text-black-50">—</td>
+                                <td class="bg-primary bg-opacity-10 py-3">✓</td>
+                                <td class="py-3">✓</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start ps-4 fw-medium text-muted py-3">Invoicing & Payments</td>
+                                <td class="py-3 text-black-50">—</td>
+                                <td class="bg-primary bg-opacity-10 py-3">✓</td>
+                                <td class="py-3">✓</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start ps-4 fw-medium text-muted py-3">Customer Portal</td>
+                                <td class="py-3 text-black-50">—</td>
+                                <td class="bg-primary bg-opacity-10 py-3">✓</td>
+                                <td class="py-3">✓</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start ps-4 fw-medium text-muted py-3">API Access</td>
+                                <td class="py-3 text-black-50">—</td>
+                                <td class="bg-primary bg-opacity-10 py-3 text-black-50">—</td>
+                                <td class="py-3">✓</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start ps-4 fw-medium text-muted py-3 border-bottom-0">Support</td>
+                                <td class="py-3 border-bottom-0">Email</td>
+                                <td class="bg-primary bg-opacity-10 py-3 border-bottom-0">Priority</td>
+                                <td class="py-3 border-bottom-0">Dedicated</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- FAQ Accordion -->
+            <div class="mt-5 pt-4 mx-auto" style="max-width: 800px;">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Frequently Asked Questions</h2>
+                </div>
+                <div class="accordion shadow-sm" id="pricingFAQ">
+                    <div class="accordion-item border-0 rounded-top-3 mb-2">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button fw-bold bg-white rounded-top-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                Can I switch plans later?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#pricingFAQ">
+                            <div class="accordion-body text-muted">
+                                Absolutely. You can upgrade or downgrade your plan at any time. Prorated charges or credits will automatically be applied to your account.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 mb-2">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                Is there a free trial?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
+                            <div class="accordion-body text-muted">
+                                Yes! We offer a 14-day free trial on all plans. No credit card is required to start your trial.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 mb-2">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                What payment methods do you accept?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
+                            <div class="accordion-body text-muted">
+                                We accept all major credit cards, as well as digital wallets like Stripe, eSewa, and Khalti for local transactions.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 rounded-bottom-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold bg-white rounded-bottom-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                Are there any hidden fees?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
+                            <div class="accordion-body text-muted">
+                                No, what you see is what you pay. Our transparent pricing means no surprise fees or setup costs.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner Section -->
+    <section class="py-5" style="background-color: #fafafa;">
+        <div class="container text-center py-5">
+            <h2 class="display-5 fw-bold mb-4 text-dark">Start 14-day free trial — No credit card required</h2>
+            <p class="lead mb-4 text-muted">Experience the ultimate repair management system today.</p>
+            <a href="#" class="btn btn-primary btn-lg px-5 py-3 fw-bold shadow-sm hover-lift">Start Free Trial</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5 border-top bg-white">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer-brand">
+                        <img src="logo-dark.png" alt="Guru Repair Logo" class="logo mb-3">
+                        <p>Less chaos. More repairs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="row g-4">
+                        <div class="col-md-3 col-6">
+                            <div class="link-group">
+                                <h4 class="mb-3">Features</h4>
+                                <a href="tickets" class="d-block mb-2 text-decoration-none text-muted">Ticket Management</a>
+                                <a href="inventory" class="d-block mb-2 text-decoration-none text-muted">Inventory Tracking</a>
+                                <a href="invoicing" class="d-block mb-2 text-decoration-none text-muted">Invoicing & Payments</a>
+                                <a href="portal" class="d-block mb-2 text-decoration-none text-muted">Customer Portal</a>
+                                <a href="marketing" class="d-block mb-2 text-decoration-none text-muted">Marketing</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="link-group">
+                                <h4 class="mb-3">Product</h4>
+                                <a href="pricing" class="d-block mb-2 text-decoration-none text-muted">Pricing</a>
+                                <a href="/#integrations" class="d-block mb-2 text-decoration-none text-muted">Integrations</a>
+                                <a href="/#industries" class="d-block mb-2 text-decoration-none text-muted">Industries</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="link-group">
+                                <h4 class="mb-3">Company</h4>
+                                <a href="#" class="d-block mb-2 text-decoration-none text-muted">About Us</a>
+                                <a href="#" class="d-block mb-2 text-decoration-none text-muted">Careers</a>
+                                <a href="/#contact" class="d-block mb-2 text-decoration-none text-muted">Contact</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="link-group">
+                                <h4 class="mb-3">Legal</h4>
+                                <a href="#" class="d-block mb-2 text-decoration-none text-muted">Privacy Policy</a>
+                                <a href="#" class="d-block mb-2 text-decoration-none text-muted">Terms of Service</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom mt-5 pt-4 border-top text-center text-muted">
+                <p>&copy; 2026 Repair Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
