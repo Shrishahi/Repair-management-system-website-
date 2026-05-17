@@ -44,4 +44,15 @@ document.addEventListener('DOMContentLoaded', () => {
         el.classList.add('reveal-up');
         observer.observe(el);
     });
+
+    // Marquee logic
+    const marqueeTrack = document.querySelector('.marquee-track');
+    if (marqueeTrack) {
+        const marqueeItems = Array.from(marqueeTrack.children);
+        marqueeItems.forEach(item => {
+            const clone = item.cloneNode(true);
+            clone.setAttribute('aria-hidden', 'true');
+            marqueeTrack.appendChild(clone);
+        });
+    }
 });
